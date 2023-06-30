@@ -15,12 +15,12 @@ const app = new Vue({
 
     currentFace: 0,
     faceLayers: [
-
+      './img/face/0.png'
     ],
 
-    currentMouth: 0,
-    mouthLayers: [
-
+    currentHair: 0,
+    hairLayers: [
+      './img/face/0.png'
     ]
   },
   computed: {},

@@ -13,9 +13,9 @@
   
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
     <script src="./js/app.js" defer></script>
-    <style src="./css/style.css"></style>
+    <link rel="stylesheet" href="./css/style.css">
 
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   
   <body>
@@ -23,31 +23,31 @@
 
       <h1>{{ appName }}</h1>
 
-      <div id="base_layer" class="layerDiv">
-        <img :src="baseLayers[0]" class="layerImg" />
-      </div>
-      <button id="base_left"><</button>
-      <button id="base_right">></button>
 
-      <div id="body_layer" class="layerDiv">
-        <img :src="bodyLayers[0]" class="layerImg" />
-      </div>
-      <button id="body_left"><</button>
-      <button id="body_right">></button>
+          <img id="base_layer" class="layer" :src="baseLayers[0]" />
+          <img id="body_layer" class="layer" :src="bodyLayers[0]" />
+          <!-- hiding this for now
+          
+          <img id="face_layer" class="layer" :src="faceLayers[0]" />
+          <img id="hair_layer" class="layer" :src="hairLayers[0]" />
+          
+          -->
 
-      <div id="face_layer" class="layerDiv">
-        <img :src="faceLayers[0]" class="layerImg" />
-      </div>
-      <button id="face_left"><</button>
-      <button id="face_right">></button>
 
-      <div id="mouth_layer" class="layerDiv">
-        <img :src="mouthLayers[0]"class="layerImg" />
-      </div>
-      <button id="mouth_left"><</button>
-      <button id="mouth_right">></button>
+      <div id="buttons_container">
+        <button id="base_left"><</button>
+        <button id="base_right">></button>
+        
+        <button id="body_left"><</button>
+        <button id="body_right">></button>
 
-      
+        <button id="face_left"><</button>
+        <button id="face_right">></button>
+
+        <button id="mouth_left"><</button>
+        <button id="mouth_right">></button>
+      </div>
+            
 
     </div>
   </body>
