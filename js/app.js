@@ -16,12 +16,7 @@ const app = new Vue({
       './img/base/1.png',
       './img/base/2.png',
       './img/base/3.png',
-      './img/base/4.png',
-      './img/base/5.png',
-      './img/base/6.png',
-      './img/base/7.png',
-      './img/base/8.png',
-      './img/base/9.png'
+      './img/base/4.png'
     ],
 
     bodyLayers: [
@@ -32,9 +27,7 @@ const app = new Vue({
       './img/body/4.png',
       './img/body/5.png',
       './img/body/6.png',
-      './img/body/7.png',
-      './img/body/8.png',
-      './img/body/9.png'
+      './img/body/7.png'
     ],
 
     faceLayers: [
@@ -42,12 +35,7 @@ const app = new Vue({
       './img/face/1.png',
       './img/face/2.png',
       './img/face/3.png',
-      './img/face/4.png',
-      './img/face/5.png',
-      './img/face/6.png',
-      './img/face/7.png',
-      './img/face/8.png',
-      './img/face/9.png'
+      './img/face/4.png'
     ],
 
     hairLayers: [
@@ -56,11 +44,7 @@ const app = new Vue({
       './img/hair/2.png',
       './img/hair/3.png',
       './img/hair/4.png',
-      './img/hair/5.png',
-      './img/hair/6.png',
-      './img/hair/7.png',
-      './img/hair/8.png',
-      './img/hair/9.png'
+      './img/hair/5.png'
     ]
   },
   computed: {},
@@ -99,7 +83,6 @@ const app = new Vue({
     },
 
     // Face methods
-
 
     faceRight() {
       if (this.avatar.face !== this.faceLayers.length - 1) // i.e. pointer within array bounds
