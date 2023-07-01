@@ -6,13 +6,22 @@ const app = new Vue({
     currentBase: 0,
     baseLayers: [
       './img/base/0.png',
-      './img/base/1.png'
+      './img/base/1.png',
+      './img/base/2.png',
+      './img/base/3.png',
+      './img/base/4.png'
     ],
 
     currentBody: 0,
     bodyLayers: [
       './img/body/0.png',
-      './img/body/1.png'
+      './img/body/1.png',
+      './img/body/2.png',
+      './img/body/3.png',
+      './img/body/4.png',
+      './img/body/5.png',
+      './img/body/6.png',
+      './img/body/7.png'
     ],
 
     currentFace: 0,
