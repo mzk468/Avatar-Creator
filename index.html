@@ -19,7 +19,7 @@
   </head>
   
   <body>
-    <div id="app">
+    <app>
 
       <h1>{{ appName }}</h1>
 
@@ -31,6 +31,11 @@
 
 
       <div id="buttons_container">
+
+        <input placeholder="Name your avatar" v-model="avatar.name"></input>
+
+        <br />
+
         <button @click="baseLeft" id="base_left"><</button>
         <button @click="baseRight" id="base_right">></button>
         
@@ -49,7 +54,13 @@
         <button @click="hairLeft" id="hair_left"><</button>
         <button @click="hairRight" id="hair_right">></button>
       </div>
-    </div>
+
+      <!-- Temporary -->
+      <p>{{ avatar }}</p>
+
+      <button @click="submit">Download Avatar</button>
+
+    </app>
   </body>
 
 
