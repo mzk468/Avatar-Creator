@@ -24,34 +24,33 @@
       <h1>{{ appName }}</h1>
 
 
-          <img id="base_layer" class="layer" :src="baseLayers[0]" />
-          <img id="body_layer" class="layer" :src="bodyLayers[0]" />
-          <!-- hiding this for now
-          
-          <img id="face_layer" class="layer" :src="faceLayers[0]" />
-          <img id="hair_layer" class="layer" :src="hairLayers[0]" />
-          
-          -->
+          <img id="base_layer" class="layer" :src="baseLayers[currentBase]" />
+          <img id="body_layer" class="layer" :src="bodyLayers[currentBody]" />
+          <img id="face_layer" class="layer" :src="faceLayers[currentFace]" />
+          <img id="hair_layer" class="layer" :src="hairLayers[currentHair]" />
 
 
       <div id="buttons_container">
-        <button id="base_left"><</button>
-        <button id="base_right">></button>
+        <button @click="baseLeft" id="base_left"><</button>
+        <button @click="baseRight" id="base_right">></button>
         
-        <button id="body_left"><</button>
-        <button id="body_right">></button>
+        <br />
 
-        <button id="face_left"><</button>
-        <button id="face_right">></button>
+        <button @click="bodyLeft" id="body_left"><</button>
+        <button @click="bodyRight" id="body_right">></button>
+        
+        <br />
 
-        <button id="mouth_left"><</button>
-        <button id="mouth_right">></button>
+        <button @click="faceLeft" id="face_left"><</button>
+        <button @click="faceRight" id="face_right">></button>
+
+        <br />
+
+        <button @click="hairLeft" id="hair_left"><</button>
+        <button @click="hairRight" id="hair_right">></button>
       </div>
-            
-
     </div>
   </body>
-
 
 
 </html>

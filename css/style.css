@@ -13,6 +13,7 @@
   display: flex;
   position: absolute;
   width: 30%;
+  aspect-ratio: 1 / 1;
   padding-top: 20vh;
   left: 35%;
 }
